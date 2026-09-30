@@ -12,6 +12,7 @@ Concept notes with code examples, organized by topic.
 | --- | --- |
 | [Basics](Theory/Basics/) | Regular expressions, checking library availability, and the `if __name__ == "__main__"` pattern |
 | [Iterators and generators](Theory/Iterators_Generators/iterators_and_generators.ipynb) | `iter()`, `next()`, exhaustion, `yield`, and lazy processing; no external packages or datasets |
+| [Comprehensions](Theory/Comprehensions/comprehensions.ipynb) | List, set, and dictionary comprehensions, filtering, conditional expressions, nesting, and lazy generator expressions |
 | [Pandas](Theory/Pandas/) | DataFrames, indexing, filtering, updating data, grouping, and survey analysis |
 | [Visualization](Theory/Visualization/) | Matplotlib and Seaborn examples using Iris data |
 | [API requests](Theory/API_Requests/) | HTTP requests, query parameters, JSON responses, and weather data |
