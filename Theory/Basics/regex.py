@@ -1,8 +1,4 @@
-"""
-Created on Sun Aug 27 22:54:05 2023
-
-@author: miche
-"""
+"""Regular expression examples covering patterns, quantifiers, groups, and methods."""
 import re
 #We need to specify a pattern
 simplepattern= re.compile(r"miche\.")
@@ -118,9 +114,6 @@ print(matches)
 #uppercase characters, we have to use flags:
 matches=(re.compile(r"start", re.I)).search(sentence)
 print(matches)
-
-
-print("AAAAAAAAAAA")
 
 
 

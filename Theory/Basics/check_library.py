@@ -1,3 +1,4 @@
+"""Check whether a Python library is installed by name."""
 library = input("Enter the library name: ")
 
 try:

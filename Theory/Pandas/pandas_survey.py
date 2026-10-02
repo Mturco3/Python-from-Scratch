@@ -1,13 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Sep  2 16:09:24 2023
-
-@author: miche
-"""
-
+"""Pandas fundamentals using the 2019 Stack Overflow developer survey."""
+from pathlib import Path
 import pandas as pd
-df_results=pd.read_csv(r"C:\Users\miche\Documenti\Csv files\Data_Stack_2019\survey_results_public.csv", index_col="Respondent")
-df_questions=pd.read_csv(r"C:\Users\miche\Documenti\Csv files\Data_Stack_2019\survey_results_schema.csv", index_col="Column")
+
+# Update these paths to point to your local copy of the survey data
+DATA_DIR = Path.home() / "Documenti" / "Csv files" / "Data_Stack_2019"
+df_results = pd.read_csv(DATA_DIR / "survey_results_public.csv", index_col="Respondent")
+df_questions = pd.read_csv(DATA_DIR / "survey_results_schema.csv", index_col="Column")
 #Creation of a dataframe, a two dimensional data structure with rows and columns. It is similar to a 
 #dictionary in which we have a list of values(rows) for each key(columns). There are more functionality.
 #We can also specify index_col when reading a file
@@ -132,6 +130,7 @@ print(df_people["POKEMON"].replace({"TEPIG": "INFERNAPE", "OSHAWOTT": "PIPLUP"})
 
 df_results.rename(columns={"ConvertedComp":"USD salary"}, inplace=True)
 def yesorno(string):
+    """Convert a Yes/No string to a boolean."""
     if string=="Yes":
         return True
     else:

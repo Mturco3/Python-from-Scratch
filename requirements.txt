@@ -1,0 +1,11 @@
+# Python Learning Journal - dependencies
+# Install: pip install -r requirements.txt
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+requests
+sentence-transformers
+mysql-connector-python
+jupyterlab
